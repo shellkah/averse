@@ -13,8 +13,8 @@ Provide a gRCP interface for the [Goutte](https://github.com/shellkah/goutte) ca
 
 ## Incoming
 
-- **Go Client library**: gRCP wrapper for python applications.
-- **Python Client library**: gRCP wrapper for Go applications.
+- **Go Client library**: gRCP wrapper for python applications [here](https://github.com/shellkah/averse-python-client).
+- **Python Client library**: gRCP wrapper for Go applications [here](https://github.com/shellkah/averse-go-client).
 - **Kubernetes manifest**: Simplifies deployment in a Kubernetes cluster.
 - **Metrics**: Tracks cache usage and exposes it for monitoring purposes.
 - **Package**: Build and publish docker image on GitHub.
