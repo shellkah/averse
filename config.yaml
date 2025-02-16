@@ -1,0 +1,9 @@
+server:
+  port: 50051
+  host: "0.0.0.0"
+
+cache:
+  capacity: 5000
+
+log:
+  level: "info"

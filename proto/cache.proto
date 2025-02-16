@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package averse;
+
+option go_package = "../cachepb";
+
+service CacheService {
+  rpc Get(GetRequest) returns (GetResponse);
+  
+  rpc Set(SetRequest) returns (SetResponse);
+  
+  rpc SetWithTTL(SetWithTTLRequest) returns (SetResponse);
+  
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+
+  rpc Dump(DumpRequest) returns (DumpResponse);
+}
+
+message GetRequest {
+  string key = 1;
+}
+
+message GetResponse {
+  string value = 1;
+  bool found = 2;
+}
+
+message SetRequest {
+  string key = 1;
+  string value = 2;
+}
+
+message SetWithTTLRequest {
+  string key = 1;
+  string value = 2;
+  int64 ttl_seconds = 3;
+}
+
+message SetResponse {
+  bool success = 1;
+}
+
+message DeleteRequest {
+  string key = 1;
+}
+
+message DeleteResponse {
+  bool success = 1;
+}
+
+message DumpRequest {}
+
+message DumpResponse {
+  bool success = 1;
+}
