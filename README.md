@@ -17,6 +17,7 @@ Provide a gRCP interface for the [Goutte](https://github.com/shellkah/goutte) ca
 - **Python Client library**: gRCP wrapper for Go applications.
 - **Kubernetes manifest**: Simplifies deployment in a Kubernetes cluster.
 - **Metrics**: Tracks cache usage and exposes it for monitoring purposes.
+- **Package**: Build and publish docker image on GitHub.
 
 ## Configuration
 - *CACHE_CAPACITY*
